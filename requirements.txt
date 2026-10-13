@@ -1,0 +1,20 @@
+# System Security & Drive Diagnostic Tool
+# ---------------------------------------
+# The application runs on the Python standard library alone (Python 3.8+).
+# Everything below is OPTIONAL and only adds extra capabilities.
+#
+#   pip install -r requirements.txt
+#
+# Not installable with pip (see README.md for instructions):
+#   * Tkinter        - the GUI toolkit. Bundled with the python.org installers
+#                      for Windows and macOS; on Linux install "python3-tk".
+#   * smartmontools  - provides "smartctl" for the full S.M.A.R.T. table on
+#                      every drive type (SATA, NVMe, USB). Strongly recommended.
+
+# Drag-and-drop of files and folders on Linux and macOS.
+# (Windows has built-in drag-and-drop and does not need this package.)
+tkinterdnd2>=0.4.0; sys_platform != "win32"
+
+# More reliable detection of mounted drives on Linux and macOS.
+# (Windows drives are detected through the Windows API instead.)
+psutil>=5.9.0; sys_platform != "win32"
