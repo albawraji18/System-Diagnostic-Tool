@@ -44,7 +44,7 @@ A Python desktop app that checks if files and folders are safe to open, and show
 
 
 ### 🎨 Fully Cohesive Theme Engine
-![Theme Engine](themes.jpg)
+![Theme Engine](themes.png)
 
 - **5 Handcrafted Color Themes:** Includes `Deep Dark`, `Cyber Blue`, `Nord Slate`, `Light Clean`, and `Midnight Amber`.
 - **Complete Visual Consistency:** The selected theme dynamically styles every widget, window background, header banner, button, and table row across both tabs without color bleeding.
